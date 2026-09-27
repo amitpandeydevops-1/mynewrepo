@@ -3,7 +3,7 @@ variable "storage_accounts" {
 
 }
 module "resource_groups" {
-  source          = "../../modules/Azurerm_resource_group"
+  source          = "../../modules/azurerm_resource_group"
   resource_groups = var.rgs
 }
 
