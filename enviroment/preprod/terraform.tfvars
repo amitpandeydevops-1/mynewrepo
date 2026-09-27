@@ -7,6 +7,7 @@ rgs = {
     name     = "rg-ajadi"
     location = "eastus"
   }
+  # testing purpose
   rg3 = {
     name     = "rg-gulami"
     location = "eastus"
