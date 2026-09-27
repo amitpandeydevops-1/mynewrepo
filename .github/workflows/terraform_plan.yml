@@ -1,13 +1,14 @@
-name: Terraform Plan
+name: Terraform Apply
 
 on:
   push:
     branches:
-      - feature/rg-ajadi
+      - main
 
 jobs:
   terraform:
     runs-on: ubuntu-latest
+
     env:
       ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
       ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
@@ -36,6 +37,6 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan
-        
 
-    
+      - name: Terraform Apply
+        run: terraform apply -auto-approve
