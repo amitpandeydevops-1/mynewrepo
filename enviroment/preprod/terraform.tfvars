@@ -7,7 +7,6 @@ rgs = {
     name     = "rg-ajadi"
     location = "eastus"
   }
-  
 }
 storage_accounts = {
   sa1 = {
